@@ -5,30 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/style.css">
   
   <title>Frontend Mentor | Profile card component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
-
+  <main>
   <div id="cardContainer">
     <header class="top">
-      <img src="./images/bg-pattern-card.svg" alt="">
+      <img class="bgCard" src="./images/bg-pattern-card.svg" alt="">
+      <section class="sectionUser">
+        <img src="./images/image-victor.jpg" alt="foto de perfil do usuario">
+        <span class="mainInformation">
+          <p class="nameUser">Victor Crest</p>
+          <p class="ageUser gray">26</p>
+          <p class="cityUser gray">London</p>
+        </span>
+      </section>
     </header>
-
-    <section>
-      <img src="./images/image-victor.jpg" alt="foto de perfil do usuario">
-      <span class="mainInformation">
-        <p class="nameUser">Victor Crest</p>
-        <p class="ageUser gray">26</p>
-        <p class="cityUser gray">London</p>
-      </span>
-    </section>
     
     <section class="informationSocialMedia">
       <span>
@@ -42,13 +37,10 @@
       <span>
         <p class="number">1.4K</p>
         <p class="nameSocialMedia gray">Photos</p>
-        
-        
       </span>
     </section>
-    
   </div>
-  
+  </main>
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 

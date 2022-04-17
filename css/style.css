@@ -1,0 +1,96 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+}
+
+main {
+    height: 95%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#cardContainer {
+    width: 26%; 
+    height: 55%;
+    border: 1px solid red;
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 75%;
+}
+
+.bgCard {
+    width: 100%;
+    height: 50%;
+}
+
+.sectionUser {
+    margin-top: -50px;
+    text-align: center;
+}
+
+.sectionUser img {
+    border-radius: 50%;
+    border: 4px solid #fff; 
+}
+
+.mainInformation {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: center;
+    border: 1px solid red;
+}
+
+.mainInformation .nameUser {
+    grid-column: 1/2;
+    border: 1px solid red;
+}
+
+.mainInformation .ageUser {
+    grid-column: 2/3;
+    border: 1px solid red;
+}
+
+.mainInformation .cityUser {
+    grid-column: 1/3;
+    grid-row: 2/3;
+    border: 1px solid red;
+}
+
+.informationSocialMedia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25%;
+    border-top: 1px solid gray;
+}
+
+.informationSocialMedia span {
+    text-align: center;
+}
+
+.informationSocialMedia span:nth-child(1),
+.informationSocialMedia span:nth-child(2) {
+    margin-right: 3.5rem;
+}
+
+div.attribution {
+    height: 5%;
+    font-size: 11px; 
+    text-align: center;
+}
+
+div.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
