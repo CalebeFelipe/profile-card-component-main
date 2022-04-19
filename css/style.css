@@ -8,7 +8,7 @@ body {
     font-family: "Kumbh Sans";
     background-color: hsl(185, 75%, 39%);
     background-image: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg);
-    background-position: -340px -515px, 722px 329px;
+    background-position: -287px -515px, 722px 329px;
     background-repeat: no-repeat;
 }
 
@@ -21,9 +21,13 @@ main {
     align-items: center;
 }
 
+/* 
+Configurações do card
+*/
+
 #cardContainer {
     width: 26%; 
-    height: 25rem;
+    height: 23rem;
     background-color: #fff;
     border-radius: 15px;
     box-shadow: 0 0 1em hsl(185, 75%, 39%);
@@ -110,10 +114,15 @@ main {
     font-weight: 600;
 }
 
+
+/*
+Configurações do footer
+*/
 div.attribution {
     height: 5%;
     font-size: 11px; 
     text-align: center;
+    color: hsl(229, 23%, 23%);
 }
 
 div.attribution a { 
@@ -123,3 +132,39 @@ div.attribution a {
 .gray {
     color: hsl(0, 0%, 55%);
 }
+
+/* 
+Medias Queries
+*/
+
+@media (max-width: 1024px) {
+    #cardContainer {
+        width: 35%;
+    }
+
+    body {
+        background-position: -488px -547px, 444px 354px;
+    }
+}
+
+@media (max-width: 768px) {
+    #cardContainer {
+        width: 45%;
+    }
+
+    body {
+        background-position: -598px -547px, 340px 354px
+    }
+}
+
+@media (max-width: 425px) {
+    #cardContainer {
+        width: 85%;
+    }
+
+    body {
+        background-position: -758px -619px, 130px 289px;
+    }
+}
+ 
+
